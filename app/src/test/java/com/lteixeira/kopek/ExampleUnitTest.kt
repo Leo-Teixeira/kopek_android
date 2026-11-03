@@ -1,4 +1,4 @@
-package com.example.kopek
+package com.lteixeira.kopek
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

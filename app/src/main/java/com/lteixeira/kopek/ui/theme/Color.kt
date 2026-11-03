@@ -1,4 +1,4 @@
-package com.example.kopek.ui.theme
+package com.lteixeira.kopek.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
