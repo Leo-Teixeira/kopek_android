@@ -24,3 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "kopek"
 include(":app")
+include(":kopekkit")
