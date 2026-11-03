@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.lteixeira.kopek.ui.theme.KopekTheme
+import com.lteixeira.kopekkit.KopekKit
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
             KopekTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "leo",
+                        version = KopekKit.version,
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -31,9 +32,9 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun Greeting(version: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        text = "Kopek, KopekKit $version",
         modifier = modifier
     )
 }
@@ -42,6 +43,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     KopekTheme {
-        Greeting("Android")
+        Greeting(version = "0.1.0")
     }
 }
