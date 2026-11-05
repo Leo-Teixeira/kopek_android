@@ -16,3 +16,4 @@ local.properties
 
 # Réglages personnels d'Android Studio
 /.idea/deploymentTargetSelector.xml
+/.idea/deviceManager.xml
