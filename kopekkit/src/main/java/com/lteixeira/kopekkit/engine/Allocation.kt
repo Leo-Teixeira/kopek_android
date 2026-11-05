@@ -258,7 +258,7 @@ fun summarizeExpenses(
         }.filter { it.objective > 0 || it.actual > 0 }
 }
 
-fun spread(
+private fun spread(
     total: Long,
     weights: List<Double>,
 ): List<Long> {
